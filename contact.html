@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - PNBB Portal</title>
+    <link rel="stylesheet" href="contact-styles.css"> <!-- Link to external stylesheet -->
+    <link rel="icon" type="image/x-icon" href="PNBrassLogoIcon.svg">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="old-posters.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Add social media links here -->
+                <li> <img src="Asset1.svg" alt=""></li>
+                <li><a href="https://www.facebook.com/palmerstonnorthbrass">Facebook</a></li>
+                <li><a href="https://www.instagram.com/pnbrass/">Instagram</a></li>
+                <li><a href="https://www.pnbrass.org.nz">PN Brass Website</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

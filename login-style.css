@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'PublicSans-VariableFont_wght';
+    src: url('PublicSans-VariableFont_wght.ttf') format('ttf'),
+         url('PublicSans-VariableFont_wght.ttf') format('ttf');
+}
+
+body {
+    --color-primary: #005fbe;
+    --color-primary-dark: #004384;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --color-background: #03c8ff;
+    --border-radius: 4px;
+
+    font-family: 'PublicSans-VariableFont_wght', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: var(--color-primary-dark);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make sure the container takes up the full height of the viewport */
+}
+
+.container {
+    max-width: 400px; /* Adjust the width of the container */
+    padding: 60px;
+    background-color: #ecac2c; /* Change the background color */
+    border-radius: var(--border-radius);
+    text-align: center; /* Center text within the container */
+}
+
+h2 {
+    color: var(--color-primary-dark); /* Change the color of the login text */
+}
+.logo-container {
+    background-color: var(--color-primary-dark); /* Set background color for the logo container */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px; /* Add space between the logo container and login section */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(100% - 20px); /* Adjust width to center within container */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--color-primary-dark);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    width: calc(100% - 20px); /* Adjust width to center within container */
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}

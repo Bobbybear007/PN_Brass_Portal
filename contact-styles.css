@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'PublicSans-VariableFont_wght';
+    src: url('PublicSans-VariableFont_wght.ttf') format('ttf'),  /* Modern Browsers */
+         url('PublicSans-VariableFont_wght.ttf') format('ttf');    /* Older Browsers */
+    /* Add more src lines if you have other font formats (e.g., .ttf) */
+    /* You can also specify font-weight and font-style here if needed */
+}
+
+body {
+    --color-primary: #005fbe;
+    --color-primary-dark: #004384;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --color-background: #03c8ff;
+    --border-radius: 4px;
+    
+    font-family: 'PublicSans-VariableFont_wght', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: var(--color-primary-dark);
+    text-align: center; /* Center all text */
+    color: white; /* Set the default color of text to white */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto 0; /* Add top margin to create space between the container and the navbar */
+    padding: 20px;
+    background-color: #ecac2c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form textarea {
+    width: 100%; /* Make the input boxes and textarea fill the width of the container */
+    padding: 10px; /* Add padding to improve spacing */
+    margin-bottom: 10px; /* Add margin-bottom to create space between input boxes */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border: 1px solid #ccc; /* Add border for visual clarity */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+
+/* Additional styles for navbar */
+header {
+    background-color: var(--color-primary); /* Set background color */
+    color: white; /* Set text color */
+    padding: 20px 0; /* Add padding */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 30px 20px 0; /* Add margin-bottom to create a gap */
+  }
+  
+  nav ul li img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

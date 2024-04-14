@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Login - PN Brass Portal</title>
+    <link rel="icon" type="image/x-icon" href="PNBrassLogoIcon.svg">
+    <link rel="stylesheet" href="login-style.css">
+    <style>
+        /* CSS to hide one of the forms by default */
+        .form--hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="logo-container">
+           <img src="Asset1.svg" alt="Logo">
+       </div>
+       <h2>Login</h2>
+       <form id="loginForm" action="javascript:void(0);" onsubmit="validatePassword()">
+           <input id="password" type="password" name="password" placeholder="Enter password" required>
+           <br>
+           <input type="submit" value="Login">
+       </form>
+   </div>
+   <script>
+       function validatePassword() {
+           var password = document.getElementById("password").value;
+           // You can replace this with your actual password validation logic
+           if (password === "12345") {
+               window.location.href = "home.html";
+           } else {
+               alert("Incorrect password. Please try again.");
+           }
+       }
+   </script>
+</body>
+</html>
