@@ -86,3 +86,11 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
   }
   
+
+
+  /* Hide the image on devices with a maximum width of 768px (typical for tablets and mobile phones) */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
